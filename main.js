@@ -71,7 +71,6 @@ console.assert(smallestNumber(numbers) === 1, {"message": "smallestNumber should
 // A:
 
 function getEvens(array){
-  console.log(array);
 
   var evenNumbers = [];
 
@@ -79,11 +78,10 @@ function getEvens(array){
 
     if (array[i] % 2 === 0) {
       evenNumbers.push(array[i])
-
+    }
   }
-
-  return evenNumbers
-
+  
+  return evenNumbers;
 }
 
 console.assert(getEvens(numbers).toString() === '12,4,18,6', {'message': 'getEvens should return "12,4,18,6"'});
@@ -99,14 +97,12 @@ console.assert(getEvens(numbers).toString() === '12,4,18,6', {'message': 'getEve
 function arrayReverser(array){
 
   var reverseArray = [];
-
-  for (var i = 11; i < array.length - 1; i--) {
-    array[i]
+  for (var i = array.length -1; i >= 0; i--) {
+  reverseArray.push(array[i]);
   }
 
   return reverseArray;
 }
-
 console.assert(arrayReverser(numbers).toString() === '6,5,101,3,11,7,9,18,4,12,1', {'message': 'arrayReverser should return "6,5,101,3,11,7,9,18,4,12,1"'});
 
 
@@ -123,8 +119,6 @@ function sumArrayOfNumbers(array){
   }
   return sum;
 }
-
-arrayFunction(numbers);
 
 
 console.assert(sumArrayOfNumbers(numbers) === 177, {'message': 'sumArrayOfNumbers should return 177'});
