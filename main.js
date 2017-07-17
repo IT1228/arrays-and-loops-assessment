@@ -193,13 +193,13 @@ var instructors = [
 ];
 
 var instructorNameDiscipline = instructors[5];
-// greenvIlleInstructor = <['Will', 'JavaScript']>
+// greenvIlleInstructor = ['Will', 'JavaScript']
 
 var instructorOne = instructors[4][0];
-// instructorOne = <['Dan', 'JavaScript'] ['JD', 'JavaScript']>
+// instructorOne = 'Dan'
 
 var instructorTwo = instructors[0][1];
-// instructorTwo = <['JD', 'Javascript'] ['Tim', 'Javascript']>
+// instructorTwo = 'Javascript'
 
 var instructorThree = instructors[2][0];
-// instructorThree = <['Brit', 'Ruby'] ['JD', 'Javascript']>
+// instructorThree = 'Brit'
